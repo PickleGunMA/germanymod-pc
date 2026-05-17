@@ -1227,13 +1227,18 @@ namespace Menu
 			{
 				Group GROUP(&TAB, "Misc");
 
-				Text NOTE(&GROUP,
+				Text MICROTRANSACTION_SPOOF_NOTE(&GROUP,
+					"Microtransaction Spoofer allows you to purchases for some offers for free.\n"
+					"Once the Steam pop-up appears, close it and then the spoofer will process the offers."
+				);
+				Checkbox MicrotransactionSpoofer(&GROUP, "Microtransaction Spoofer");
+
+				Text SAFE_MODE_NODE(&GROUP,
 					"Progress will not be saved and no analytic logs will be sent\n"
 					"while Safe Mode is enabled.\n\n"
 
 					"Safe Mode doesn't work with several account mods."
 				);
-
 				Checkbox SafeMode(&GROUP, "Safe Mode");
 				#ifdef EXPERIMENTAL
 				Checkbox AntiReport(&GROUP, "Anti ingame-report");
@@ -1528,6 +1533,7 @@ namespace Menu
 					"3. If you only cares about modding account, It's better to not use any blatant gameplay mod to prevent chance of getting reported.\n"	
 					"4. Keep any currency you had as low as possible. My maximum recommendation is no more than 10k.\n"
 					"5. Leave right before the match ends to prevent getting logged on others player match history.\n"
+					"6. Change your nickname as often as possible to avoid being found in searches."
 				);
 			}
 		}

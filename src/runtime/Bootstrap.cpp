@@ -11,6 +11,7 @@
 #include "game/GameplayMain.hpp"
 #include "game/AntiAnalytics.hpp"
 #include "game/websocket/WebsocketCore.hpp"
+#include "game/TransactionHandler.hpp"
 
 #include <IL2CPP.hpp>
 
@@ -60,6 +61,7 @@ namespace Bootstrap
 		AntiAnalytics::INIT();
 		GameplayMain::INIT();
 		WebsocketCore::INIT();
+		TransactionHandler::INIT();
 		#endif // !NO_FEATURE
 
 		Menu::INIT();

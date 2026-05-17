@@ -1296,7 +1296,7 @@ namespace GameplayMain
 
 		$RegisterHook(
 			WeaponManager,
-			GetClass("WeaponManager")->GetMethod("Update"),
+			GetClass("WeaponManager")->GetMethod("Update")
 		);
 
 		$RegisterHook(
@@ -1313,19 +1313,19 @@ namespace GameplayMain
 			Rocket,
 			GetClass("Rocket")->GetMethodByPattern(
 				{ "private", "Boolean", nullptr, {"RocketSettings"} }
-			),
+			)
 		);
 
 		$RegisterHook(
 			CreateRocket,
 			GetClass("Player_move_c")->GetMethodByPattern(
 				{ "internal static", "Rocket", nullptr, {"WeaponSounds", "Vector3", "Quaternion", "Single", "Int32", "Int32"} }
-			),
+			)
 		);
 
 		$RegisterHook(
 			WeaponSounds,
-			GetClass("WeaponSounds")->GetMethod("Update"),
+			GetClass("WeaponSounds")->GetMethod("Update")
 		);
 
 		$RegisterHook(

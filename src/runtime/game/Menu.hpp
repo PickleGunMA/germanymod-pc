@@ -100,7 +100,7 @@ namespace Menu
 				extern Checkbox Gravity;
 				extern Checkbox Ricochet;
 
-				extern Checkbox RainRocket;
+				//extern Checkbox RainRocket;
 				extern Checkbox Box3DRocket;
 				extern Checkbox PenisRocket;
 				extern Checkbox TextToRocket;
@@ -110,11 +110,10 @@ namespace Menu
 			namespace Visual
 			{
 				extern Group GROUP;
-
+				extern Checkbox EspBox;
 				extern Checkbox Xray;
 				extern Checkbox TPS;
 				extern Checkbox Spinbot;
-				extern Checkbox EspBox;
 				extern FloatSlider SpinbotSpeed;
 			}
 		}
@@ -179,10 +178,11 @@ namespace Menu
 				extern Checkbox CrashEveryone;
 				extern Checkbox GrabMonster;
 				extern Checkbox TpAllToCenter;
-				extern Button NoClipEveryone;
+				extern Text TpAllNote;
 				#ifdef EXPERIMENTAL
 				extern Button SpawnPlayer;
 				#endif
+				extern Button NoClipEveryone;
 			}
 		}
 	}
@@ -481,14 +481,14 @@ namespace Menu
 		{
 			extern Tab TAB;
 
-			namespace Chat
-			{
-				extern Group GROUP;
+			//namespace Chat
+			//{
+			//	extern Group GROUP;
 
-				extern Checkbox BypassChatFilter;
+			//	extern Checkbox BypassChatFilter;
 
-				
-			}
+			//	
+			//}
 
 			namespace Armory
 			{
@@ -504,12 +504,14 @@ namespace Menu
 			{
 				extern Group GROUP;
 
-				extern Text NOTE;
-
+				extern Text SAFE_MODE_NODE;
 				extern Checkbox SafeMode;
 				#ifdef EXPERIMENTAL
 				extern Checkbox AntiReport;
 				#endif
+
+				extern Text MICROTRANSACTION_SPOOF_NOTE;
+				extern Checkbox MicrotransactionSpoofer;
 				extern Button ForceReload;
 				extern Button SkipTutorial;
 
